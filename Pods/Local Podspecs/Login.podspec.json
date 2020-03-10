@@ -1,0 +1,24 @@
+{
+  "name": "Login",
+  "version": "1.0.0",
+  "summary": "Framework para login de app iOS",
+  "description": "Framework para realizar login de app iOS con Swift y Firebase",
+  "homepage": "https://appcoda.com",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "diegoatencia": "diegoatenciasimon@hotmail.com"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "source": {
+    "git": "https://github.com/diegoatencia/LoginModule.git",
+    "tag": "1.0.0"
+  },
+  "source_files": "Login/Source/*.{swift}",
+  "swift_versions": "5.0",
+  "swift_version": "5.0"
+}

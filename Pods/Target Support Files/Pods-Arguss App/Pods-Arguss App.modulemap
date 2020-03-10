@@ -1,0 +1,6 @@
+module Pods_Arguss_App {
+  umbrella header "Pods-Arguss App-umbrella.h"
+
+  export *
+  module * { export * }
+}

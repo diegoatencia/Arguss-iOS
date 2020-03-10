@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>734545776639-trahe1de431vlga3vj0gdadm1ionrih5.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.734545776639-trahe1de431vlga3vj0gdadm1ionrih5</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCQ5KIgAEpxL6L0OfcuBXyv9uAOf7vg6Q8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>734545776639</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.diegoatencia.Arguss-App</string>
+	<key>PROJECT_ID</key>
+	<string>arguss-a691e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>arguss-a691e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:734545776639:ios:c741bbe2875fc201e561ca</string>
+	<key>DATABASE_URL</key>
+	<string>https://arguss-a691e.firebaseio.com</string>
+</dict>
+</plist>

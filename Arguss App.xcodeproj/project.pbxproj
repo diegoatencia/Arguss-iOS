@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60D5CFCF9390ABC08876F078 /* libPods-Arguss App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8606B2BC513D9F5717B05E93 /* libPods-Arguss App.a */; };
+		78175E9623F767EA00AC0933 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78175E9523F767EA00AC0933 /* GoogleService-Info.plist */; };
+		78175E9823F7710B00AC0933 /* HomeAdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78175E9723F7710B00AC0933 /* HomeAdminViewController.swift */; };
+		785C01F52404C5E0007BA53D /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785C01F42404C5E0007BA53D /* RegistroViewController.swift */; };
+		78D861D223EDB95B00E7F860 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D861D123EDB95B00E7F860 /* AppDelegate.swift */; };
+		78D861D423EDB95B00E7F860 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D861D323EDB95B00E7F860 /* SceneDelegate.swift */; };
+		78D861DB23EDB96100E7F860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78D861DA23EDB96100E7F860 /* Assets.xcassets */; };
+		78D861DE23EDB96100E7F860 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78D861DC23EDB96100E7F860 /* LaunchScreen.storyboard */; };
+		78DD9CD023FF4CBE00613174 /* HomeUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DD9CCF23FF4CBE00613174 /* HomeUsuarioViewController.swift */; };
+		78E10B6123EE3D550039CD15 /* IniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E10B6023EE3D550039CD15 /* IniciarSesionViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		78D8017F240EFE9D0090CC67 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		19CC170DE2573BDDBCC68C16 /* Pods-Arguss App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arguss App.debug.xcconfig"; path = "Target Support Files/Pods-Arguss App/Pods-Arguss App.debug.xcconfig"; sourceTree = "<group>"; };
+		78175E9523F767EA00AC0933 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		78175E9723F7710B00AC0933 /* HomeAdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAdminViewController.swift; sourceTree = "<group>"; };
+		785C01F42404C5E0007BA53D /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
+		78D861CE23EDB95B00E7F860 /* Arguss App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arguss App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78D861D123EDB95B00E7F860 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		78D861D323EDB95B00E7F860 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		78D861DA23EDB96100E7F860 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78D861DD23EDB96100E7F860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		78D861DF23EDB96100E7F860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78DD9CCF23FF4CBE00613174 /* HomeUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUsuarioViewController.swift; sourceTree = "<group>"; };
+		78E10B6023EE3D550039CD15 /* IniciarSesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IniciarSesionViewController.swift; sourceTree = "<group>"; };
+		8606B2BC513D9F5717B05E93 /* libPods-Arguss App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Arguss App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFC551BDBBE74A5031AD53AC /* Pods-Arguss App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arguss App.release.xcconfig"; path = "Target Support Files/Pods-Arguss App/Pods-Arguss App.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78D861CB23EDB95B00E7F860 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60D5CFCF9390ABC08876F078 /* libPods-Arguss App.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4AB74B759F654990F1251026 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8606B2BC513D9F5717B05E93 /* libPods-Arguss App.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78D861C523EDB95B00E7F860 = {
+			isa = PBXGroup;
+			children = (
+				78D861D023EDB95B00E7F860 /* Arguss App */,
+				78D861CF23EDB95B00E7F860 /* Products */,
+				C7BA32122DB94EB36DE6A5A1 /* Pods */,
+				4AB74B759F654990F1251026 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		78D861CF23EDB95B00E7F860 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78D861CE23EDB95B00E7F860 /* Arguss App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78D861D023EDB95B00E7F860 /* Arguss App */ = {
+			isa = PBXGroup;
+			children = (
+				78D861E523EDB9B000E7F860 /* View Controllers */,
+				78D861D123EDB95B00E7F860 /* AppDelegate.swift */,
+				78D861D323EDB95B00E7F860 /* SceneDelegate.swift */,
+				78D861DC23EDB96100E7F860 /* LaunchScreen.storyboard */,
+				78D861DA23EDB96100E7F860 /* Assets.xcassets */,
+				78D861DF23EDB96100E7F860 /* Info.plist */,
+				78175E9523F767EA00AC0933 /* GoogleService-Info.plist */,
+			);
+			path = "Arguss App";
+			sourceTree = "<group>";
+		};
+		78D861E523EDB9B000E7F860 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				78E10B6023EE3D550039CD15 /* IniciarSesionViewController.swift */,
+				785C01F42404C5E0007BA53D /* RegistroViewController.swift */,
+				78175E9723F7710B00AC0933 /* HomeAdminViewController.swift */,
+				78DD9CCF23FF4CBE00613174 /* HomeUsuarioViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C7BA32122DB94EB36DE6A5A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19CC170DE2573BDDBCC68C16 /* Pods-Arguss App.debug.xcconfig */,
+				AFC551BDBBE74A5031AD53AC /* Pods-Arguss App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78D861CD23EDB95B00E7F860 /* Arguss App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78D861E223EDB96100E7F860 /* Build configuration list for PBXNativeTarget "Arguss App" */;
+			buildPhases = (
+				174C2CD1077620CB484EFC8C /* [CP] Check Pods Manifest.lock */,
+				78D861CA23EDB95B00E7F860 /* Sources */,
+				78D861CB23EDB95B00E7F860 /* Frameworks */,
+				78D861CC23EDB95B00E7F860 /* Resources */,
+				CDC613E884B966EB69C02085 /* [CP] Copy Pods Resources */,
+				78D8017F240EFE9D0090CC67 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Arguss App";
+			productName = "Arguss App";
+			productReference = 78D861CE23EDB95B00E7F860 /* Arguss App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78D861C623EDB95B00E7F860 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Diego Atencia";
+				TargetAttributes = {
+					78D861CD23EDB95B00E7F860 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 78D861C923EDB95B00E7F860 /* Build configuration list for PBXProject "Arguss App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78D861C523EDB95B00E7F860;
+			productRefGroup = 78D861CF23EDB95B00E7F860 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78D861CD23EDB95B00E7F860 /* Arguss App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78D861CC23EDB95B00E7F860 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78D861DE23EDB96100E7F860 /* LaunchScreen.storyboard in Resources */,
+				78D861DB23EDB96100E7F860 /* Assets.xcassets in Resources */,
+				78175E9623F767EA00AC0933 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		174C2CD1077620CB484EFC8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Arguss App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDC613E884B966EB69C02085 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Arguss App/Pods-Arguss App-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Arguss App/Pods-Arguss App-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Arguss App/Pods-Arguss App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78D861CA23EDB95B00E7F860 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78E10B6123EE3D550039CD15 /* IniciarSesionViewController.swift in Sources */,
+				785C01F52404C5E0007BA53D /* RegistroViewController.swift in Sources */,
+				78175E9823F7710B00AC0933 /* HomeAdminViewController.swift in Sources */,
+				78D861D223EDB95B00E7F860 /* AppDelegate.swift in Sources */,
+				78DD9CD023FF4CBE00613174 /* HomeUsuarioViewController.swift in Sources */,
+				78D861D423EDB95B00E7F860 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		78D861DC23EDB96100E7F860 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78D861DD23EDB96100E7F860 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		78D861E023EDB96100E7F860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		78D861E123EDB96100E7F860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78D861E323EDB96100E7F860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19CC170DE2573BDDBCC68C16 /* Pods-Arguss App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 24S4ATAKAV;
+				INFOPLIST_FILE = "Arguss App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.diegoatencia.Arguss-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		78D861E423EDB96100E7F860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFC551BDBBE74A5031AD53AC /* Pods-Arguss App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 24S4ATAKAV;
+				INFOPLIST_FILE = "Arguss App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.diegoatencia.Arguss-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78D861C923EDB95B00E7F860 /* Build configuration list for PBXProject "Arguss App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78D861E023EDB96100E7F860 /* Debug */,
+				78D861E123EDB96100E7F860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78D861E223EDB96100E7F860 /* Build configuration list for PBXNativeTarget "Arguss App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78D861E323EDB96100E7F860 /* Debug */,
+				78D861E423EDB96100E7F860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78D861C623EDB95B00E7F860 /* Project object */;
+}
