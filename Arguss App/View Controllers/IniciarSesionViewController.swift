@@ -3,6 +3,7 @@ import SnapKit
 import Firebase
 import Hero
 
+@available(iOS 13.0, *)
 class IniciarSesionViewController: UIViewController {
 
     //MARK: ATRIBUTOS

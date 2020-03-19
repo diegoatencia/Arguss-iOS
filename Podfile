@@ -7,9 +7,7 @@ target 'Arguss App' do
 
   # Pods for Arguss App
 pod 'SnapKit'
-# pod 'Firebase/Auth'
-# pod 'Firebase/Firestore'
-pod 'Firebase'
+pod 'Firebase/Auth'
+pod 'Firebase/Firestore'
 pod 'Hero'
-pod 'Login', :git => 'https://github.com/diegoatencia/LoginModule.git'
 end
