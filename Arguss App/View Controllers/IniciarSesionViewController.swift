@@ -425,10 +425,4 @@ class IniciarSesionViewController: UIViewController {
     }
     
     
-    
-    
-    
-    
-    
-    
 }

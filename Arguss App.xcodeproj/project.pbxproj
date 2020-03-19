@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		60D5CFCF9390ABC08876F078 /* libPods-Arguss App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8606B2BC513D9F5717B05E93 /* libPods-Arguss App.a */; };
+		0C303667CDC71C507E2C9498 /* libPods-Arguss App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1583D9B4C9B10A9DC2EA6018 /* libPods-Arguss App.a */; };
 		78175E9623F767EA00AC0933 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78175E9523F767EA00AC0933 /* GoogleService-Info.plist */; };
 		78175E9823F7710B00AC0933 /* HomeAdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78175E9723F7710B00AC0933 /* HomeAdminViewController.swift */; };
 		785C01F52404C5E0007BA53D /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785C01F42404C5E0007BA53D /* RegistroViewController.swift */; };
+		78C0281F241A8CDF00903589 /* IniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0281E241A8CDF00903589 /* IniciarSesionViewController.swift */; };
 		78D861D223EDB95B00E7F860 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D861D123EDB95B00E7F860 /* AppDelegate.swift */; };
 		78D861D423EDB95B00E7F860 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D861D323EDB95B00E7F860 /* SceneDelegate.swift */; };
 		78D861DB23EDB96100E7F860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78D861DA23EDB96100E7F860 /* Assets.xcassets */; };
 		78D861DE23EDB96100E7F860 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78D861DC23EDB96100E7F860 /* LaunchScreen.storyboard */; };
 		78DD9CD023FF4CBE00613174 /* HomeUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DD9CCF23FF4CBE00613174 /* HomeUsuarioViewController.swift */; };
-		78E10B6123EE3D550039CD15 /* IniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E10B6023EE3D550039CD15 /* IniciarSesionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,10 +33,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1583D9B4C9B10A9DC2EA6018 /* libPods-Arguss App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Arguss App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19CC170DE2573BDDBCC68C16 /* Pods-Arguss App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arguss App.debug.xcconfig"; path = "Target Support Files/Pods-Arguss App/Pods-Arguss App.debug.xcconfig"; sourceTree = "<group>"; };
 		78175E9523F767EA00AC0933 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		78175E9723F7710B00AC0933 /* HomeAdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAdminViewController.swift; sourceTree = "<group>"; };
 		785C01F42404C5E0007BA53D /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
+		78C0281E241A8CDF00903589 /* IniciarSesionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IniciarSesionViewController.swift; sourceTree = "<group>"; };
 		78D861CE23EDB95B00E7F860 /* Arguss App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arguss App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78D861D123EDB95B00E7F860 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78D861D323EDB95B00E7F860 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,8 +46,6 @@
 		78D861DD23EDB96100E7F860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78D861DF23EDB96100E7F860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78DD9CCF23FF4CBE00613174 /* HomeUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUsuarioViewController.swift; sourceTree = "<group>"; };
-		78E10B6023EE3D550039CD15 /* IniciarSesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IniciarSesionViewController.swift; sourceTree = "<group>"; };
-		8606B2BC513D9F5717B05E93 /* libPods-Arguss App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Arguss App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC551BDBBE74A5031AD53AC /* Pods-Arguss App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arguss App.release.xcconfig"; path = "Target Support Files/Pods-Arguss App/Pods-Arguss App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60D5CFCF9390ABC08876F078 /* libPods-Arguss App.a in Frameworks */,
+				0C303667CDC71C507E2C9498 /* libPods-Arguss App.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +64,7 @@
 		4AB74B759F654990F1251026 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8606B2BC513D9F5717B05E93 /* libPods-Arguss App.a */,
+				1583D9B4C9B10A9DC2EA6018 /* libPods-Arguss App.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -104,7 +104,7 @@
 		78D861E523EDB9B000E7F860 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				78E10B6023EE3D550039CD15 /* IniciarSesionViewController.swift */,
+				78C0281E241A8CDF00903589 /* IniciarSesionViewController.swift */,
 				785C01F42404C5E0007BA53D /* RegistroViewController.swift */,
 				78175E9723F7710B00AC0933 /* HomeAdminViewController.swift */,
 				78DD9CCF23FF4CBE00613174 /* HomeUsuarioViewController.swift */,
@@ -132,7 +132,6 @@
 				78D861CA23EDB95B00E7F860 /* Sources */,
 				78D861CB23EDB95B00E7F860 /* Frameworks */,
 				78D861CC23EDB95B00E7F860 /* Resources */,
-				CDC613E884B966EB69C02085 /* [CP] Copy Pods Resources */,
 				78D8017F240EFE9D0090CC67 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -213,23 +212,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CDC613E884B966EB69C02085 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Arguss App/Pods-Arguss App-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Arguss App/Pods-Arguss App-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Arguss App/Pods-Arguss App-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -237,10 +219,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78E10B6123EE3D550039CD15 /* IniciarSesionViewController.swift in Sources */,
 				785C01F52404C5E0007BA53D /* RegistroViewController.swift in Sources */,
 				78175E9823F7710B00AC0933 /* HomeAdminViewController.swift in Sources */,
 				78D861D223EDB95B00E7F860 /* AppDelegate.swift in Sources */,
+				78C0281F241A8CDF00903589 /* IniciarSesionViewController.swift in Sources */,
 				78DD9CD023FF4CBE00613174 /* HomeUsuarioViewController.swift in Sources */,
 				78D861D423EDB95B00E7F860 /* SceneDelegate.swift in Sources */,
 			);
@@ -382,6 +364,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24S4ATAKAV;
 				INFOPLIST_FILE = "Arguss App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -401,6 +384,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24S4ATAKAV;
 				INFOPLIST_FILE = "Arguss App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

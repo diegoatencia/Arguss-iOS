@@ -20,5 +20,17 @@
   },
   "source_files": "Login/Source/*.{swift}",
   "swift_versions": "5.0",
+  "static_framework": true,
+  "dependencies": {
+    "SnapKit": [
+
+    ],
+    "Firebase": [
+
+    ],
+    "Hero": [
+
+    ]
+  },
   "swift_version": "5.0"
 }
