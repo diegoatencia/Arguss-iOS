@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		0C303667CDC71C507E2C9498 /* libPods-Arguss App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1583D9B4C9B10A9DC2EA6018 /* libPods-Arguss App.a */; };
 		78175E9623F767EA00AC0933 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78175E9523F767EA00AC0933 /* GoogleService-Info.plist */; };
-		78175E9823F7710B00AC0933 /* HomeAdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78175E9723F7710B00AC0933 /* HomeAdminViewController.swift */; };
-		785C01F52404C5E0007BA53D /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785C01F42404C5E0007BA53D /* RegistroViewController.swift */; };
-		78C0281F241A8CDF00903589 /* IniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C0281E241A8CDF00903589 /* IniciarSesionViewController.swift */; };
+		7821B7D8249978CE00B1A3A2 /* IniciarSesionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7821B7D7249978CE00B1A3A2 /* IniciarSesionPresenter.swift */; };
+		786E1B4624942C0000E1576D /* IniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E1B4524942C0000E1576D /* IniciarSesionViewController.swift */; };
+		786E1B49249430B900E1576D /* IniciarSesionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E1B48249430B900E1576D /* IniciarSesionView.swift */; };
+		786E1B4C2494325200E1576D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E1B4B2494325200E1576D /* ActivityIndicator.swift */; };
 		78D861D223EDB95B00E7F860 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D861D123EDB95B00E7F860 /* AppDelegate.swift */; };
 		78D861D423EDB95B00E7F860 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D861D323EDB95B00E7F860 /* SceneDelegate.swift */; };
 		78D861DB23EDB96100E7F860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78D861DA23EDB96100E7F860 /* Assets.xcassets */; };
 		78D861DE23EDB96100E7F860 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78D861DC23EDB96100E7F860 /* LaunchScreen.storyboard */; };
-		78DD9CD023FF4CBE00613174 /* HomeUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DD9CCF23FF4CBE00613174 /* HomeUsuarioViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,16 +36,16 @@
 		1583D9B4C9B10A9DC2EA6018 /* libPods-Arguss App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Arguss App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19CC170DE2573BDDBCC68C16 /* Pods-Arguss App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arguss App.debug.xcconfig"; path = "Target Support Files/Pods-Arguss App/Pods-Arguss App.debug.xcconfig"; sourceTree = "<group>"; };
 		78175E9523F767EA00AC0933 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		78175E9723F7710B00AC0933 /* HomeAdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAdminViewController.swift; sourceTree = "<group>"; };
-		785C01F42404C5E0007BA53D /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
-		78C0281E241A8CDF00903589 /* IniciarSesionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IniciarSesionViewController.swift; sourceTree = "<group>"; };
+		7821B7D7249978CE00B1A3A2 /* IniciarSesionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IniciarSesionPresenter.swift; sourceTree = "<group>"; };
+		786E1B4524942C0000E1576D /* IniciarSesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IniciarSesionViewController.swift; sourceTree = "<group>"; };
+		786E1B48249430B900E1576D /* IniciarSesionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IniciarSesionView.swift; sourceTree = "<group>"; };
+		786E1B4B2494325200E1576D /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		78D861CE23EDB95B00E7F860 /* Arguss App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arguss App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78D861D123EDB95B00E7F860 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78D861D323EDB95B00E7F860 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		78D861DA23EDB96100E7F860 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78D861DD23EDB96100E7F860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78D861DF23EDB96100E7F860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		78DD9CCF23FF4CBE00613174 /* HomeUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUsuarioViewController.swift; sourceTree = "<group>"; };
 		AFC551BDBBE74A5031AD53AC /* Pods-Arguss App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arguss App.release.xcconfig"; path = "Target Support Files/Pods-Arguss App/Pods-Arguss App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +69,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		786E1B4424942BBE00E1576D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				786E1B4524942C0000E1576D /* IniciarSesionViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		786E1B4724942DF500E1576D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				786E1B48249430B900E1576D /* IniciarSesionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		786E1B4A2494323800E1576D /* Recursos */ = {
+			isa = PBXGroup;
+			children = (
+				786E1B4B2494325200E1576D /* ActivityIndicator.swift */,
+			);
+			path = Recursos;
+			sourceTree = "<group>";
+		};
+		786E1B4D2494361F00E1576D /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				7821B7D7249978CE00B1A3A2 /* IniciarSesionPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		786E1B4E2494362F00E1576D /* Servicios */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Servicios;
+			sourceTree = "<group>";
+		};
 		78D861C523EDB95B00E7F860 = {
 			isa = PBXGroup;
 			children = (
@@ -90,7 +129,11 @@
 		78D861D023EDB95B00E7F860 /* Arguss App */ = {
 			isa = PBXGroup;
 			children = (
-				78D861E523EDB9B000E7F860 /* View Controllers */,
+				786E1B4E2494362F00E1576D /* Servicios */,
+				786E1B4D2494361F00E1576D /* Presenters */,
+				786E1B4A2494323800E1576D /* Recursos */,
+				786E1B4724942DF500E1576D /* Views */,
+				786E1B4424942BBE00E1576D /* View Controllers */,
 				78D861D123EDB95B00E7F860 /* AppDelegate.swift */,
 				78D861D323EDB95B00E7F860 /* SceneDelegate.swift */,
 				78D861DC23EDB96100E7F860 /* LaunchScreen.storyboard */,
@@ -99,17 +142,6 @@
 				78175E9523F767EA00AC0933 /* GoogleService-Info.plist */,
 			);
 			path = "Arguss App";
-			sourceTree = "<group>";
-		};
-		78D861E523EDB9B000E7F860 /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				78C0281E241A8CDF00903589 /* IniciarSesionViewController.swift */,
-				785C01F42404C5E0007BA53D /* RegistroViewController.swift */,
-				78175E9723F7710B00AC0933 /* HomeAdminViewController.swift */,
-				78DD9CCF23FF4CBE00613174 /* HomeUsuarioViewController.swift */,
-			);
-			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		C7BA32122DB94EB36DE6A5A1 /* Pods */ = {
@@ -237,11 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				785C01F52404C5E0007BA53D /* RegistroViewController.swift in Sources */,
-				78175E9823F7710B00AC0933 /* HomeAdminViewController.swift in Sources */,
+				786E1B4624942C0000E1576D /* IniciarSesionViewController.swift in Sources */,
+				786E1B4C2494325200E1576D /* ActivityIndicator.swift in Sources */,
+				786E1B49249430B900E1576D /* IniciarSesionView.swift in Sources */,
+				7821B7D8249978CE00B1A3A2 /* IniciarSesionPresenter.swift in Sources */,
 				78D861D223EDB95B00E7F860 /* AppDelegate.swift in Sources */,
-				78C0281F241A8CDF00903589 /* IniciarSesionViewController.swift in Sources */,
-				78DD9CD023FF4CBE00613174 /* HomeUsuarioViewController.swift in Sources */,
 				78D861D423EDB95B00E7F860 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,7 +410,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 19CC170DE2573BDDBCC68C16 /* Pods-Arguss App.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24S4ATAKAV;
 				INFOPLIST_FILE = "Arguss App/Info.plist";
@@ -398,7 +430,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AFC551BDBBE74A5031AD53AC /* Pods-Arguss App.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24S4ATAKAV;
 				INFOPLIST_FILE = "Arguss App/Info.plist";

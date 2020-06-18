@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BBb-0B-Aoa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BBb-0B-Aoa">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,14 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_png" translatesAutoresizingMaskIntoConstraints="NO" id="xaI-2b-C9L">
-                                <rect key="frame" x="52" y="298" width="310" height="300"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_svg" translatesAutoresizingMaskIntoConstraints="NO" id="OAl-49-rvS">
+                                <rect key="frame" x="130.5" y="373" width="153" height="150"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="xaI-2b-C9L" firstAttribute="centerX" secondItem="3J3-3c-F1A" secondAttribute="centerX" id="f7W-sa-uXP"/>
-                            <constraint firstItem="xaI-2b-C9L" firstAttribute="centerY" secondItem="3J3-3c-F1A" secondAttribute="centerY" id="xN3-cS-VKh"/>
+                            <constraint firstItem="OAl-49-rvS" firstAttribute="centerX" secondItem="3J3-3c-F1A" secondAttribute="centerX" id="8Mg-zr-3RB"/>
+                            <constraint firstItem="OAl-49-rvS" firstAttribute="centerY" secondItem="3J3-3c-F1A" secondAttribute="centerY" id="hBt-j6-pQh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DP7-Ga-wuj"/>
                     </view>
@@ -33,6 +34,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo_png" width="310" height="300"/>
+        <image name="logo_svg" width="153" height="150"/>
     </resources>
 </document>
