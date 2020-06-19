@@ -27,7 +27,7 @@ class IniciarSesionViewController: UIViewController {
         //Metodo para cambiar colores al tocar el contraseñaTextField
         vista.contraseñaTextField.addTarget(self, action: #selector(contraseñaTextFieldDidChange), for: .touchDown)
         
-        // Metodos para levantar-bajar vista al mostrar-ocultar teclado
+        //Metodos para levantar-bajar vista al mostrar-ocultar teclado
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
@@ -92,10 +92,9 @@ class IniciarSesionViewController: UIViewController {
     
     // Función para levantar vista al mostrar teclado
     @objc func keyboardWillShow(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-            if self.view.frame.origin.y == 0 {
-                self.view.frame.origin.y -= keyboardSize.height
-            }
+        guard let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue else { return }
+        if self.view.frame.origin.y == 0 {
+            self.view.frame.origin.y -= keyboardSize.height
         }
     }
 
