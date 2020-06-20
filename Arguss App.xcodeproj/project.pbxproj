@@ -13,6 +13,11 @@
 		786E1B4624942C0000E1576D /* IniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E1B4524942C0000E1576D /* IniciarSesionViewController.swift */; };
 		786E1B49249430B900E1576D /* IniciarSesionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E1B48249430B900E1576D /* IniciarSesionView.swift */; };
 		786E1B4C2494325200E1576D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E1B4B2494325200E1576D /* ActivityIndicator.swift */; };
+		78C49233249D5B1E0077FB70 /* IniciarSesionServicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C49232249D5B1E0077FB70 /* IniciarSesionServicio.swift */; };
+		78C49236249D5FB50077FB70 /* Persona.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C49235249D5FB50077FB70 /* Persona.swift */; };
+		78C49238249D74980077FB70 /* Alertas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C49237249D74970077FB70 /* Alertas.swift */; };
+		78C4923A249DB65C0077FB70 /* HomeUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C49239249DB65C0077FB70 /* HomeUsuarioViewController.swift */; };
+		78C4923C249DB67D0077FB70 /* HomeAdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C4923B249DB67D0077FB70 /* HomeAdminViewController.swift */; };
 		78D861D223EDB95B00E7F860 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D861D123EDB95B00E7F860 /* AppDelegate.swift */; };
 		78D861D423EDB95B00E7F860 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D861D323EDB95B00E7F860 /* SceneDelegate.swift */; };
 		78D861DB23EDB96100E7F860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78D861DA23EDB96100E7F860 /* Assets.xcassets */; };
@@ -40,6 +45,11 @@
 		786E1B4524942C0000E1576D /* IniciarSesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IniciarSesionViewController.swift; sourceTree = "<group>"; };
 		786E1B48249430B900E1576D /* IniciarSesionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IniciarSesionView.swift; sourceTree = "<group>"; };
 		786E1B4B2494325200E1576D /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		78C49232249D5B1E0077FB70 /* IniciarSesionServicio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IniciarSesionServicio.swift; sourceTree = "<group>"; };
+		78C49235249D5FB50077FB70 /* Persona.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persona.swift; sourceTree = "<group>"; };
+		78C49237249D74970077FB70 /* Alertas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertas.swift; sourceTree = "<group>"; };
+		78C49239249DB65C0077FB70 /* HomeUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUsuarioViewController.swift; sourceTree = "<group>"; };
+		78C4923B249DB67D0077FB70 /* HomeAdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAdminViewController.swift; sourceTree = "<group>"; };
 		78D861CE23EDB95B00E7F860 /* Arguss App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arguss App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78D861D123EDB95B00E7F860 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78D861D323EDB95B00E7F860 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				786E1B4524942C0000E1576D /* IniciarSesionViewController.swift */,
+				78C49239249DB65C0077FB70 /* HomeUsuarioViewController.swift */,
+				78C4923B249DB67D0077FB70 /* HomeAdminViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -89,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				786E1B4B2494325200E1576D /* ActivityIndicator.swift */,
+				78C49237249D74970077FB70 /* Alertas.swift */,
 			);
 			path = Recursos;
 			sourceTree = "<group>";
@@ -104,8 +117,17 @@
 		786E1B4E2494362F00E1576D /* Servicios */ = {
 			isa = PBXGroup;
 			children = (
+				78C49232249D5B1E0077FB70 /* IniciarSesionServicio.swift */,
 			);
 			path = Servicios;
+			sourceTree = "<group>";
+		};
+		78C49234249D5BE20077FB70 /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				78C49235249D5FB50077FB70 /* Persona.swift */,
+			);
+			path = Modelos;
 			sourceTree = "<group>";
 		};
 		78D861C523EDB95B00E7F860 = {
@@ -129,6 +151,7 @@
 		78D861D023EDB95B00E7F860 /* Arguss App */ = {
 			isa = PBXGroup;
 			children = (
+				78C49234249D5BE20077FB70 /* Modelos */,
 				786E1B4E2494362F00E1576D /* Servicios */,
 				786E1B4D2494361F00E1576D /* Presenters */,
 				786E1B4A2494323800E1576D /* Recursos */,
@@ -269,11 +292,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78C49236249D5FB50077FB70 /* Persona.swift in Sources */,
+				78C4923C249DB67D0077FB70 /* HomeAdminViewController.swift in Sources */,
+				78C49233249D5B1E0077FB70 /* IniciarSesionServicio.swift in Sources */,
 				786E1B4624942C0000E1576D /* IniciarSesionViewController.swift in Sources */,
 				786E1B4C2494325200E1576D /* ActivityIndicator.swift in Sources */,
+				78C49238249D74980077FB70 /* Alertas.swift in Sources */,
 				786E1B49249430B900E1576D /* IniciarSesionView.swift in Sources */,
 				7821B7D8249978CE00B1A3A2 /* IniciarSesionPresenter.swift in Sources */,
 				78D861D223EDB95B00E7F860 /* AppDelegate.swift in Sources */,
+				78C4923A249DB65C0077FB70 /* HomeUsuarioViewController.swift in Sources */,
 				78D861D423EDB95B00E7F860 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
