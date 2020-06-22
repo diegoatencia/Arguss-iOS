@@ -5,6 +5,7 @@ class IniciarSesionServicio {
     
     //MARK: ATRIBUTOS
     var db: Firestore?
+    let iniciarSesionRepo = IniciarSesionRepositorio()
     
     func iniciarSesion(mail: String, contraseña: String) -> String {
         
@@ -62,6 +63,12 @@ class IniciarSesionServicio {
         }
         
         return resultado
+    }
+    
+    func obtenerUsuarios() -> [Persona] {
+        iniciarSesionRepo.db = self.db
+        let usuarios: [Persona] = iniciarSesionRepo.obtenerUsuarios()
+        return usuarios
     }
     
 }

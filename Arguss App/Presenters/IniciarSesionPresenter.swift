@@ -21,12 +21,6 @@ class IniciarSesionPresenter/*: InicioSesionDelegate*/ {
         delegate?.iniciarSesion(tipoInicio: resultado)
     }
     
-    /*func inicioSesion_Servicio(mail: String, contraseña: String) {
-        iniciarSesionServicio.db = self.db
-        let resultado: String = iniciarSesionServicio.iniciarSesion(mail: mail, contraseña: contraseña)
-        delegate?.iniciarSesion(tipoInicio: resultado)
-    }*/
-    
 }
 
 /* RESUMEN

@@ -58,16 +58,15 @@ class IniciarSesionViewController: UIViewController, IniciarSesionDelegate {
         /* HABILITAR DESPUES, CUANDO ESTÉ TODO EL LOGIN HECHO */
         //sesionActiva()
         
-        vista.mailTextField.text = ""
-        vista.contraseñaTextField.text = ""
+        self.vaciarTextFields()
     }
     
     //MARK: viewWillAppear()
     public override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = true
         
-        vista.mailTextField.text = ""
-        vista.contraseñaTextField.text = ""
+        self.vaciarTextFields()
     }
     
     //MARK: didReceiveMemoryWarning()
@@ -107,6 +106,22 @@ class IniciarSesionViewController: UIViewController, IniciarSesionDelegate {
     func volverContraseñaColorOriginal() {
         vista.imageViewIconoCandado.tintColor = vista.colorWithHexString(hexString: vista.azulOscuro)
         vista.linea2.backgroundColor = vista.colorWithHexString(hexString: vista.azulOscuro)
+    }
+    
+    //Funcion para vaciar textFields
+    func vaciarTextFields() {
+        self.vista.mailTextField.text = ""
+        self.vista.contraseñaTextField.text = ""
+    }
+    
+    //Funcion para vaciar mailTextField
+    func vaciarMailTextField() {
+        self.vista.mailTextField.text = ""
+    }
+    
+    //Funcion para vaciar contraseñaTextField
+    func vaciarContraseñaTextField() {
+        self.vista.contraseñaTextField.text = ""
     }
     
     // Función para levantar vista al mostrar teclado
@@ -150,6 +165,7 @@ class IniciarSesionViewController: UIViewController, IniciarSesionDelegate {
             
             let alerta = UIAlertController(title: "Atención", message: "El campo de email no debe estar vacío.", preferredStyle: .alert)
             let aceptar = UIAlertAction(title: "Aceptar", style: .default, handler: nil)
+            self.vaciarContraseñaTextField()
             self.alertas.presentarAlerta(alerta: alerta, acciones: [aceptar], vc: self)
             
         } else if vista.mailTextField.text != "" && vista.contraseñaTextField.text == "" {
@@ -166,16 +182,19 @@ class IniciarSesionViewController: UIViewController, IniciarSesionDelegate {
         case "no_usuario":
             let alerta = UIAlertController(title: "Usuario no encontrado", message: "No se encontró un usuario registrado con los datos ingresados.", preferredStyle: .alert)
             let aceptar = UIAlertAction(title: "Aceptar", style: .default, handler: nil)
+            self.vaciarTextFields()
             self.alertas.presentarAlerta(alerta: alerta, acciones: [aceptar], vc: self)
             
         case "contraseña_incorrecta":
             let alerta = UIAlertController(title: "Contraseña incorrecta", message: "La contraseña ingresada no es válida. Ingresela nuevamente.", preferredStyle: .alert)
             let aceptar = UIAlertAction(title: "Aceptar", style: .default, handler: nil)
+            self.vaciarContraseñaTextField()
             self.alertas.presentarAlerta(alerta: alerta, acciones: [aceptar], vc: self)
             
         case "otro_error", "":
             let alerta = UIAlertController(title: "Atención", message: "No se ha podido iniciar sesión. Intente nuevamente", preferredStyle: .alert)
             let aceptar = UIAlertAction(title: "Aceptar", style: .default, handler: nil)
+            self.vaciarTextFields()
             self.alertas.presentarAlerta(alerta: alerta, acciones: [aceptar], vc: self)
             
         case "inicio_admin":
