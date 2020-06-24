@@ -170,7 +170,12 @@ class IniciarSesionView: UIView {
         iniciarSesionButton.layer.shadowOpacity = 1 //Opacidad sombra
         iniciarSesionButton.snp.makeConstraints { (maker) in
             maker.height.equalTo(46)
-            maker.top.equalTo(linea2.snp.bottom).offset(30)
+            switch alturaIphones {
+            case 1792, 2436, 2688:
+                maker.top.equalTo(linea2.snp.bottom).offset(60)
+            default:
+                maker.top.equalTo(linea2.snp.bottom).offset(40)
+            }
             maker.leading.equalTo(imageViewIconoCandado.snp.leading)
             maker.trailing.equalTo(linea2.snp.trailing)
         }

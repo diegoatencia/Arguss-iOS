@@ -2,17 +2,17 @@ import UIKit
 import Firebase
 
 @available(iOS 13.0, *)
-class IniciarSesionViewController: UIViewController, IniciarSesionDelegate {
+class IniciarSesionViewController: UIViewController {
     
     //MARK: ATRIBUTOS
     let vista = IniciarSesionView() //Instancia de la vista
     let activityIndicator = ActivityIndicator() //Instancia del Activity Indicator
     let alertas = Alertas()
     var db: Firestore!
-    var presenter: IniciarSesionPresenter!
     
     let homeAdmin = HomeAdminViewController()
     let homeUser = HomeUsuarioViewController()
+    let recuperarContraseñaVC = RecuperarPasswordViewController()
     
     //MARK: viewDidLoad()
     override func viewDidLoad() {
@@ -41,13 +41,11 @@ class IniciarSesionViewController: UIViewController, IniciarSesionDelegate {
         //Instancia de Firestore
         db = Firestore.firestore()
         
-        //Instancia presenter
-        presenter = IniciarSesionPresenter()
-        presenter.delegate = self
-        
-        // Métodos a ejecutar al tocar los botones
-        // Boton 'Iniciar sesion'
+        //Métodos a ejecutar al tocar los botones
+        //Boton 'Iniciar sesion'
         vista.iniciarSesionButton.addTarget(self, action: #selector(iniciarSesionButtonTapped), for: .touchUpInside)
+        //Boton 'Olvidé mi contraseña'
+        vista.olvidarContraseñaButton.addTarget(self, action: #selector(olvidarContraseñaButtonTapped), for: .touchUpInside)
     }
     
     //MARK: viewDidAppear()
@@ -127,8 +125,19 @@ class IniciarSesionViewController: UIViewController, IniciarSesionDelegate {
     // Función para levantar vista al mostrar teclado
     @objc func keyboardWillShow(notification: NSNotification) {
         guard let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue else { return }
+        var reduccionAltura: CGFloat = 0
+        switch vista.alturaIphones {
+        case 1334:
+            reduccionAltura = 26
+        case 1920:
+            reduccionAltura = 30
+        case 2436:
+            reduccionAltura = 80
+        default:
+            reduccionAltura = 70
+        }
         if self.view.frame.origin.y == 0 {
-            self.view.frame.origin.y -= keyboardSize.height
+            self.view.frame.origin.y -= keyboardSize.height - reduccionAltura
         }
     }
 
@@ -144,20 +153,21 @@ class IniciarSesionViewController: UIViewController, IniciarSesionDelegate {
     @objc public func iniciarSesionButtonTapped(sender: UIButton!){
         print("Botón iniciar sesión presionado. Ingresando...")
         
+        activityIndicator.empezarActivityIndicator(viewController: self)
+        
         if vista.mailTextField.text != "" && vista.contraseñaTextField.text != "" {
             //Condicion: textFields llenos
             
             guard let mail = vista.mailTextField.text else { return }
             guard let contraseña = vista.contraseñaTextField.text else { return }
-            presenter.db = self.db
-            print("llamada a metodo del presenter en vc")
-            presenter.inicioSesion(mail: mail, contraseña: contraseña) ///Llama al metodo 'inicioSesion' del IniciarSesionPresenter
+            self.inicio(mail: mail, contraseña: contraseña)
             
         } else if vista.mailTextField.text == "" && vista.contraseñaTextField.text == "" {
             //Condicion: textFields vacíos
             
             let alerta = UIAlertController(title: "Atención", message: "Los campos de email y contraseña no deben estar vacíos.", preferredStyle: .alert)
             let aceptar = UIAlertAction(title: "Aceptar", style: .default, handler: nil)
+            activityIndicator.terminarActivityIndicator(viewController: self)
             self.alertas.presentarAlerta(alerta: alerta, acciones: [aceptar], vc: self)
             
         } else if vista.mailTextField.text == "" && vista.contraseñaTextField.text != "" {
@@ -166,6 +176,7 @@ class IniciarSesionViewController: UIViewController, IniciarSesionDelegate {
             let alerta = UIAlertController(title: "Atención", message: "El campo de email no debe estar vacío.", preferredStyle: .alert)
             let aceptar = UIAlertAction(title: "Aceptar", style: .default, handler: nil)
             self.vaciarContraseñaTextField()
+            activityIndicator.terminarActivityIndicator(viewController: self)
             self.alertas.presentarAlerta(alerta: alerta, acciones: [aceptar], vc: self)
             
         } else if vista.mailTextField.text != "" && vista.contraseñaTextField.text == "" {
@@ -173,38 +184,88 @@ class IniciarSesionViewController: UIViewController, IniciarSesionDelegate {
             
             let alerta = UIAlertController(title: "Atención", message: "El campo de contraseña no debe estar vacío.", preferredStyle: .alert)
             let aceptar = UIAlertAction(title: "Aceptar", style: .default, handler: nil)
+            activityIndicator.terminarActivityIndicator(viewController: self)
             self.alertas.presentarAlerta(alerta: alerta, acciones: [aceptar], vc: self)
         }
     }
     
-    func iniciarSesion(tipoInicio: String) { ///Recibe lo del protocol del presenter
+    func inicio(mail: String, contraseña: String){
+        Auth.auth().signIn(withEmail: mail, password: contraseña) { (result, error) in
+            if error != nil {
+                if let errorCode = AuthErrorCode(rawValue: error!._code) {
+                    switch errorCode {
+                    case .wrongPassword:
+                        print("Contraseña incorrecta")
+                        self.iniciarSesion(tipoInicio: "contraseña_incorrecta")
+                    default:
+                        print("Error: \(error!)")
+                        self.iniciarSesion(tipoInicio: "otro_error")
+                    }
+                }
+            } else {
+                guard let userId = Auth.auth().currentUser?.uid else { return }
+                
+                //Busqueda entre los usuarios de Firestore para ver si es administrador o no
+                self.db.collection("users").getDocuments { (snapshot, error) in
+                    if let error = error { //Si se produce un error obteniendo los datos
+                        print("Error obteniendo los documentos de Firestore: ", error.localizedDescription)
+                        self.iniciarSesion(tipoInicio: "otro_error")
+                    } else {
+                        //Recorrer los documentos encontrados
+                        for document in snapshot!.documents {
+                            let values = document.data()
+                            let id = document.documentID
+                            
+                            if id == userId {
+                                let isAdmin = values["isAdmin"] as! Bool
+                                if isAdmin == true {
+                                    self.iniciarSesion(tipoInicio: "inicio_admin")
+                                } else {
+                                    self.iniciarSesion(tipoInicio: "inicio_usuario")
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    func iniciarSesion(tipoInicio: String) {
         switch tipoInicio {
         case "no_usuario":
             let alerta = UIAlertController(title: "Usuario no encontrado", message: "No se encontró un usuario registrado con los datos ingresados.", preferredStyle: .alert)
             let aceptar = UIAlertAction(title: "Aceptar", style: .default, handler: nil)
             self.vaciarTextFields()
+            self.activityIndicator.terminarActivityIndicator(viewController: self)
             self.alertas.presentarAlerta(alerta: alerta, acciones: [aceptar], vc: self)
             
         case "contraseña_incorrecta":
             let alerta = UIAlertController(title: "Contraseña incorrecta", message: "La contraseña ingresada no es válida. Ingresela nuevamente.", preferredStyle: .alert)
             let aceptar = UIAlertAction(title: "Aceptar", style: .default, handler: nil)
             self.vaciarContraseñaTextField()
+            self.activityIndicator.terminarActivityIndicator(viewController: self)
             self.alertas.presentarAlerta(alerta: alerta, acciones: [aceptar], vc: self)
             
         case "otro_error", "":
             let alerta = UIAlertController(title: "Atención", message: "No se ha podido iniciar sesión. Intente nuevamente", preferredStyle: .alert)
             let aceptar = UIAlertAction(title: "Aceptar", style: .default, handler: nil)
             self.vaciarTextFields()
+            self.activityIndicator.terminarActivityIndicator(viewController: self)
             self.alertas.presentarAlerta(alerta: alerta, acciones: [aceptar], vc: self)
             
         case "inicio_admin":
-            print("Inicio admin")
-            self.present(self.homeAdmin, animated: true, completion: nil)
+            self.activityIndicator.terminarActivityIndicator(viewController: self)
+            self.navigationController?.pushViewController(self.homeAdmin, animated: true)
             
         default:
-            print("Inicio usuario")
-            self.present(self.homeUser, animated: true, completion: nil)
+            self.activityIndicator.terminarActivityIndicator(viewController: self)
+            self.navigationController?.pushViewController(self.homeUser, animated: true)
         }
+    }
+    
+    @objc public func olvidarContraseñaButtonTapped(sender: UIButton!) {
+        self.navigationController?.pushViewController(self.recuperarContraseñaVC, animated: true)
     }
     
 }

@@ -9,16 +9,15 @@
 /* Begin PBXBuildFile section */
 		0C303667CDC71C507E2C9498 /* libPods-Arguss App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1583D9B4C9B10A9DC2EA6018 /* libPods-Arguss App.a */; };
 		78175E9623F767EA00AC0933 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78175E9523F767EA00AC0933 /* GoogleService-Info.plist */; };
-		7821B7D8249978CE00B1A3A2 /* IniciarSesionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7821B7D7249978CE00B1A3A2 /* IniciarSesionPresenter.swift */; };
+		783DCCD624A263A3000F5315 /* RecuperarPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DCCD524A263A3000F5315 /* RecuperarPasswordViewController.swift */; };
+		783DCCD824A2A8D2000F5315 /* RecuperarPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DCCD724A2A8D2000F5315 /* RecuperarPasswordView.swift */; };
 		786E1B4624942C0000E1576D /* IniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E1B4524942C0000E1576D /* IniciarSesionViewController.swift */; };
 		786E1B49249430B900E1576D /* IniciarSesionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E1B48249430B900E1576D /* IniciarSesionView.swift */; };
 		786E1B4C2494325200E1576D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E1B4B2494325200E1576D /* ActivityIndicator.swift */; };
-		78C49233249D5B1E0077FB70 /* IniciarSesionServicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C49232249D5B1E0077FB70 /* IniciarSesionServicio.swift */; };
 		78C49236249D5FB50077FB70 /* Persona.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C49235249D5FB50077FB70 /* Persona.swift */; };
 		78C49238249D74980077FB70 /* Alertas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C49237249D74970077FB70 /* Alertas.swift */; };
 		78C4923A249DB65C0077FB70 /* HomeUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C49239249DB65C0077FB70 /* HomeUsuarioViewController.swift */; };
 		78C4923C249DB67D0077FB70 /* HomeAdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C4923B249DB67D0077FB70 /* HomeAdminViewController.swift */; };
-		78C4923F249E98D80077FB70 /* IniciarSesionRepositorio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C4923E249E98D80077FB70 /* IniciarSesionRepositorio.swift */; };
 		78D861D223EDB95B00E7F860 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D861D123EDB95B00E7F860 /* AppDelegate.swift */; };
 		78D861D423EDB95B00E7F860 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D861D323EDB95B00E7F860 /* SceneDelegate.swift */; };
 		78D861DB23EDB96100E7F860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78D861DA23EDB96100E7F860 /* Assets.xcassets */; };
@@ -42,16 +41,15 @@
 		1583D9B4C9B10A9DC2EA6018 /* libPods-Arguss App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Arguss App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19CC170DE2573BDDBCC68C16 /* Pods-Arguss App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arguss App.debug.xcconfig"; path = "Target Support Files/Pods-Arguss App/Pods-Arguss App.debug.xcconfig"; sourceTree = "<group>"; };
 		78175E9523F767EA00AC0933 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		7821B7D7249978CE00B1A3A2 /* IniciarSesionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IniciarSesionPresenter.swift; sourceTree = "<group>"; };
+		783DCCD524A263A3000F5315 /* RecuperarPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecuperarPasswordViewController.swift; sourceTree = "<group>"; };
+		783DCCD724A2A8D2000F5315 /* RecuperarPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecuperarPasswordView.swift; sourceTree = "<group>"; };
 		786E1B4524942C0000E1576D /* IniciarSesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IniciarSesionViewController.swift; sourceTree = "<group>"; };
 		786E1B48249430B900E1576D /* IniciarSesionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IniciarSesionView.swift; sourceTree = "<group>"; };
 		786E1B4B2494325200E1576D /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
-		78C49232249D5B1E0077FB70 /* IniciarSesionServicio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IniciarSesionServicio.swift; sourceTree = "<group>"; };
 		78C49235249D5FB50077FB70 /* Persona.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persona.swift; sourceTree = "<group>"; };
 		78C49237249D74970077FB70 /* Alertas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertas.swift; sourceTree = "<group>"; };
 		78C49239249DB65C0077FB70 /* HomeUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUsuarioViewController.swift; sourceTree = "<group>"; };
 		78C4923B249DB67D0077FB70 /* HomeAdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAdminViewController.swift; sourceTree = "<group>"; };
-		78C4923E249E98D80077FB70 /* IniciarSesionRepositorio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IniciarSesionRepositorio.swift; sourceTree = "<group>"; };
 		78D861CE23EDB95B00E7F860 /* Arguss App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arguss App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78D861D123EDB95B00E7F860 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78D861D323EDB95B00E7F860 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +85,7 @@
 				786E1B4524942C0000E1576D /* IniciarSesionViewController.swift */,
 				78C49239249DB65C0077FB70 /* HomeUsuarioViewController.swift */,
 				78C4923B249DB67D0077FB70 /* HomeAdminViewController.swift */,
+				783DCCD524A263A3000F5315 /* RecuperarPasswordViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -95,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				786E1B48249430B900E1576D /* IniciarSesionView.swift */,
+				783DCCD724A2A8D2000F5315 /* RecuperarPasswordView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -111,7 +111,6 @@
 		786E1B4D2494361F00E1576D /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
-				7821B7D7249978CE00B1A3A2 /* IniciarSesionPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -119,7 +118,6 @@
 		786E1B4E2494362F00E1576D /* Servicios */ = {
 			isa = PBXGroup;
 			children = (
-				78C49232249D5B1E0077FB70 /* IniciarSesionServicio.swift */,
 			);
 			path = Servicios;
 			sourceTree = "<group>";
@@ -135,7 +133,6 @@
 		78C4923D249E98B90077FB70 /* Repositorios */ = {
 			isa = PBXGroup;
 			children = (
-				78C4923E249E98D80077FB70 /* IniciarSesionRepositorio.swift */,
 			);
 			path = Repositorios;
 			sourceTree = "<group>";
@@ -304,14 +301,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				78C49236249D5FB50077FB70 /* Persona.swift in Sources */,
+				783DCCD824A2A8D2000F5315 /* RecuperarPasswordView.swift in Sources */,
+				783DCCD624A263A3000F5315 /* RecuperarPasswordViewController.swift in Sources */,
 				78C4923C249DB67D0077FB70 /* HomeAdminViewController.swift in Sources */,
-				78C49233249D5B1E0077FB70 /* IniciarSesionServicio.swift in Sources */,
 				786E1B4624942C0000E1576D /* IniciarSesionViewController.swift in Sources */,
 				786E1B4C2494325200E1576D /* ActivityIndicator.swift in Sources */,
 				78C49238249D74980077FB70 /* Alertas.swift in Sources */,
 				786E1B49249430B900E1576D /* IniciarSesionView.swift in Sources */,
-				7821B7D8249978CE00B1A3A2 /* IniciarSesionPresenter.swift in Sources */,
-				78C4923F249E98D80077FB70 /* IniciarSesionRepositorio.swift in Sources */,
 				78D861D223EDB95B00E7F860 /* AppDelegate.swift in Sources */,
 				78C4923A249DB65C0077FB70 /* HomeUsuarioViewController.swift in Sources */,
 				78D861D423EDB95B00E7F860 /* SceneDelegate.swift in Sources */,
