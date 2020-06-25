@@ -165,7 +165,7 @@ class IniciarSesionViewController: UIViewController {
         } else if vista.mailTextField.text == "" && vista.contraseñaTextField.text == "" {
             //Condicion: textFields vacíos
             
-            let alerta = UIAlertController(title: "Atención", message: "Los campos de email y contraseña no deben estar vacíos.", preferredStyle: .alert)
+            let alerta = UIAlertController(title: "Atención", message: "Los campos de correo electrónico y contraseña no deben estar vacíos.", preferredStyle: .alert)
             let aceptar = UIAlertAction(title: "Aceptar", style: .default, handler: nil)
             activityIndicator.terminarActivityIndicator(viewController: self)
             self.alertas.presentarAlerta(alerta: alerta, acciones: [aceptar], vc: self)
