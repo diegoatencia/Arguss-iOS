@@ -108,33 +108,12 @@
 			path = Recursos;
 			sourceTree = "<group>";
 		};
-		786E1B4D2494361F00E1576D /* Presenters */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presenters;
-			sourceTree = "<group>";
-		};
-		786E1B4E2494362F00E1576D /* Servicios */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Servicios;
-			sourceTree = "<group>";
-		};
 		78C49234249D5BE20077FB70 /* Modelos */ = {
 			isa = PBXGroup;
 			children = (
 				78C49235249D5FB50077FB70 /* Persona.swift */,
 			);
 			path = Modelos;
-			sourceTree = "<group>";
-		};
-		78C4923D249E98B90077FB70 /* Repositorios */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Repositorios;
 			sourceTree = "<group>";
 		};
 		78D861C523EDB95B00E7F860 = {
@@ -158,10 +137,7 @@
 		78D861D023EDB95B00E7F860 /* Arguss App */ = {
 			isa = PBXGroup;
 			children = (
-				78C4923D249E98B90077FB70 /* Repositorios */,
 				78C49234249D5BE20077FB70 /* Modelos */,
-				786E1B4E2494362F00E1576D /* Servicios */,
-				786E1B4D2494361F00E1576D /* Presenters */,
 				786E1B4A2494323800E1576D /* Recursos */,
 				786E1B4724942DF500E1576D /* Views */,
 				786E1B4424942BBE00E1576D /* View Controllers */,
