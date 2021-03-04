@@ -14,14 +14,21 @@
 		786E1B4624942C0000E1576D /* IniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E1B4524942C0000E1576D /* IniciarSesionViewController.swift */; };
 		786E1B49249430B900E1576D /* IniciarSesionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E1B48249430B900E1576D /* IniciarSesionView.swift */; };
 		786E1B4C2494325200E1576D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E1B4B2494325200E1576D /* ActivityIndicator.swift */; };
+		78A6DCCD25EDE1EE00A32DBC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78A6DCCC25EDE1EE00A32DBC /* Colors.xcassets */; };
+		78BD00D325F13DCA0008B8B6 /* UIViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD00D225F13DCA0008B8B6 /* UIViewController + Extensions.swift */; };
 		78C49236249D5FB50077FB70 /* Persona.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C49235249D5FB50077FB70 /* Persona.swift */; };
 		78C49238249D74980077FB70 /* Alertas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C49237249D74970077FB70 /* Alertas.swift */; };
 		78C4923A249DB65C0077FB70 /* HomeUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C49239249DB65C0077FB70 /* HomeUsuarioViewController.swift */; };
 		78C4923C249DB67D0077FB70 /* HomeAdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C4923B249DB67D0077FB70 /* HomeAdminViewController.swift */; };
+		78C6098E25E36B6200952392 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C6098D25E36B6200952392 /* ViewControllerFactory.swift */; };
 		78D861D223EDB95B00E7F860 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D861D123EDB95B00E7F860 /* AppDelegate.swift */; };
 		78D861D423EDB95B00E7F860 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D861D323EDB95B00E7F860 /* SceneDelegate.swift */; };
 		78D861DB23EDB96100E7F860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78D861DA23EDB96100E7F860 /* Assets.xcassets */; };
 		78D861DE23EDB96100E7F860 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78D861DC23EDB96100E7F860 /* LaunchScreen.storyboard */; };
+		78EB632825DECCE0007B7C61 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EB632625DECCE0007B7C61 /* LoginViewController.swift */; };
+		78EB632925DECCE0007B7C61 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78EB632725DECCE0007B7C61 /* LoginViewController.xib */; };
+		78EB632B25DECCF7007B7C61 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EB632A25DECCF7007B7C61 /* LoginViewModel.swift */; };
+		78EB632F25DEDC76007B7C61 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EB632E25DEDC76007B7C61 /* ColorPalette.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,16 +53,23 @@
 		786E1B4524942C0000E1576D /* IniciarSesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IniciarSesionViewController.swift; sourceTree = "<group>"; };
 		786E1B48249430B900E1576D /* IniciarSesionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IniciarSesionView.swift; sourceTree = "<group>"; };
 		786E1B4B2494325200E1576D /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		78A6DCCC25EDE1EE00A32DBC /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		78BD00D225F13DCA0008B8B6 /* UIViewController + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extensions.swift"; sourceTree = "<group>"; };
 		78C49235249D5FB50077FB70 /* Persona.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persona.swift; sourceTree = "<group>"; };
 		78C49237249D74970077FB70 /* Alertas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertas.swift; sourceTree = "<group>"; };
 		78C49239249DB65C0077FB70 /* HomeUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUsuarioViewController.swift; sourceTree = "<group>"; };
 		78C4923B249DB67D0077FB70 /* HomeAdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAdminViewController.swift; sourceTree = "<group>"; };
+		78C6098D25E36B6200952392 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		78D861CE23EDB95B00E7F860 /* Arguss App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arguss App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78D861D123EDB95B00E7F860 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78D861D323EDB95B00E7F860 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		78D861DA23EDB96100E7F860 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78D861DD23EDB96100E7F860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78D861DF23EDB96100E7F860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78EB632625DECCE0007B7C61 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		78EB632725DECCE0007B7C61 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		78EB632A25DECCF7007B7C61 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		78EB632E25DEDC76007B7C61 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		AFC551BDBBE74A5031AD53AC /* Pods-Arguss App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arguss App.release.xcconfig"; path = "Target Support Files/Pods-Arguss App/Pods-Arguss App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +130,30 @@
 			path = Modelos;
 			sourceTree = "<group>";
 		};
+		78C6098C25E36AF500952392 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				78D861DA23EDB96100E7F860 /* Assets.xcassets */,
+				78A6DCCC25EDE1EE00A32DBC /* Colors.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		78C6098F25E36B7800952392 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				78BD00D225F13DCA0008B8B6 /* UIViewController + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		78C6099025E36BB200952392 /* RecoverPassword */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RecoverPassword;
+			sourceTree = "<group>";
+		};
 		78D861C523EDB95B00E7F860 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +175,9 @@
 		78D861D023EDB95B00E7F860 /* Arguss App */ = {
 			isa = PBXGroup;
 			children = (
+				78C6098C25E36AF500952392 /* Assets */,
+				78EB632C25DEDC57007B7C61 /* Utils */,
+				78EB632425DECC2F007B7C61 /* Modules */,
 				78C49234249D5BE20077FB70 /* Modelos */,
 				786E1B4A2494323800E1576D /* Recursos */,
 				786E1B4724942DF500E1576D /* Views */,
@@ -144,11 +185,47 @@
 				78D861D123EDB95B00E7F860 /* AppDelegate.swift */,
 				78D861D323EDB95B00E7F860 /* SceneDelegate.swift */,
 				78D861DC23EDB96100E7F860 /* LaunchScreen.storyboard */,
-				78D861DA23EDB96100E7F860 /* Assets.xcassets */,
 				78D861DF23EDB96100E7F860 /* Info.plist */,
 				78175E9523F767EA00AC0933 /* GoogleService-Info.plist */,
 			);
 			path = "Arguss App";
+			sourceTree = "<group>";
+		};
+		78EB632425DECC2F007B7C61 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				78C6099025E36BB200952392 /* RecoverPassword */,
+				78EB632525DECC98007B7C61 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		78EB632525DECC98007B7C61 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				78EB632625DECCE0007B7C61 /* LoginViewController.swift */,
+				78EB632725DECCE0007B7C61 /* LoginViewController.xib */,
+				78EB632A25DECCF7007B7C61 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		78EB632C25DEDC57007B7C61 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				78C6098F25E36B7800952392 /* Extensions */,
+				78EB632D25DEDC5E007B7C61 /* ColorPalette */,
+				78C6098D25E36B6200952392 /* ViewControllerFactory.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		78EB632D25DEDC5E007B7C61 /* ColorPalette */ = {
+			isa = PBXGroup;
+			children = (
+				78EB632E25DEDC76007B7C61 /* ColorPalette.swift */,
+			);
+			path = ColorPalette;
 			sourceTree = "<group>";
 		};
 		C7BA32122DB94EB36DE6A5A1 /* Pods */ = {
@@ -221,6 +298,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78A6DCCD25EDE1EE00A32DBC /* Colors.xcassets in Resources */,
+				78EB632925DECCE0007B7C61 /* LoginViewController.xib in Resources */,
 				78D861DE23EDB96100E7F860 /* LaunchScreen.storyboard in Resources */,
 				78D861DB23EDB96100E7F860 /* Assets.xcassets in Resources */,
 				78175E9623F767EA00AC0933 /* GoogleService-Info.plist in Resources */,
@@ -276,13 +355,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78EB632825DECCE0007B7C61 /* LoginViewController.swift in Sources */,
 				78C49236249D5FB50077FB70 /* Persona.swift in Sources */,
 				783DCCD824A2A8D2000F5315 /* RecuperarPasswordView.swift in Sources */,
 				783DCCD624A263A3000F5315 /* RecuperarPasswordViewController.swift in Sources */,
 				78C4923C249DB67D0077FB70 /* HomeAdminViewController.swift in Sources */,
 				786E1B4624942C0000E1576D /* IniciarSesionViewController.swift in Sources */,
+				78BD00D325F13DCA0008B8B6 /* UIViewController + Extensions.swift in Sources */,
+				78C6098E25E36B6200952392 /* ViewControllerFactory.swift in Sources */,
 				786E1B4C2494325200E1576D /* ActivityIndicator.swift in Sources */,
+				78EB632F25DEDC76007B7C61 /* ColorPalette.swift in Sources */,
 				78C49238249D74980077FB70 /* Alertas.swift in Sources */,
+				78EB632B25DECCF7007B7C61 /* LoginViewModel.swift in Sources */,
 				786E1B49249430B900E1576D /* IniciarSesionView.swift in Sources */,
 				78D861D223EDB95B00E7F860 /* AppDelegate.swift in Sources */,
 				78C4923A249DB65C0077FB70 /* HomeUsuarioViewController.swift in Sources */,
@@ -354,7 +438,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -408,7 +492,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -426,7 +510,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24S4ATAKAV;
 				INFOPLIST_FILE = "Arguss App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,7 +530,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24S4ATAKAV;
 				INFOPLIST_FILE = "Arguss App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
