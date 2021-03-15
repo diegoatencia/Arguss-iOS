@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToastView">
+            <connections>
+                <outlet property="toastLabel" destination="YNf-gP-N9l" id="zlz-id-DOE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="zaT-Qq-4xr">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nxu-Rk-Ik3" userLabel="ContainerView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNf-gP-N9l">
+                            <rect key="frame" x="25" y="15" width="325" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="white"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="davysGrey"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="YNf-gP-N9l" secondAttribute="trailing" constant="25" id="H37-Ll-hWP"/>
+                        <constraint firstAttribute="height" constant="80" id="d06-Lb-idD"/>
+                        <constraint firstItem="YNf-gP-N9l" firstAttribute="top" secondItem="nxu-Rk-Ik3" secondAttribute="top" constant="15" id="igp-ax-vRk"/>
+                        <constraint firstItem="YNf-gP-N9l" firstAttribute="leading" secondItem="nxu-Rk-Ik3" secondAttribute="leading" constant="25" id="peU-de-WIT"/>
+                        <constraint firstAttribute="bottom" secondItem="YNf-gP-N9l" secondAttribute="bottom" constant="15" id="rWC-zw-p5k"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="AbN-l4-J2G"/>
+            <constraints>
+                <constraint firstItem="nxu-Rk-Ik3" firstAttribute="leading" secondItem="AbN-l4-J2G" secondAttribute="leading" id="JBi-d1-a4d"/>
+                <constraint firstItem="nxu-Rk-Ik3" firstAttribute="bottom" secondItem="AbN-l4-J2G" secondAttribute="bottom" id="d0R-Dl-a0y"/>
+                <constraint firstItem="nxu-Rk-Ik3" firstAttribute="top" secondItem="AbN-l4-J2G" secondAttribute="top" id="pR4-Ut-aFN"/>
+                <constraint firstItem="AbN-l4-J2G" firstAttribute="trailing" secondItem="nxu-Rk-Ik3" secondAttribute="trailing" id="v5T-he-SwR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="156" y="193.4032983508246"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="davysGrey">
+            <color red="0.31400001049041748" green="0.31400001049041748" blue="0.31400001049041748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

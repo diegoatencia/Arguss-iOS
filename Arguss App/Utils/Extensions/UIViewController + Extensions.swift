@@ -8,17 +8,21 @@
 
 import Foundation
 import UIKit
+import SnapKit
 
 extension UIViewController {
-    func updateStatusBarColor() {
-        var statusBarStyle = UIStatusBarStyle.default
-        switch traitCollection.userInterfaceStyle {
-        case .light:
-            statusBarStyle = .lightContent
-        case .dark:
-            statusBarStyle = .darkContent
-        default:
-            statusBarStyle = .default
+    func showToast() {
+        let toastView = ToastView()
+        toastView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(toastView)
+        toastView.snp.makeConstraints { maker in
+            maker.leading.trailing.bottom.equalToSuperview()
+        }
+        toastView.toastLabel.text = "Hola, soy un toast view"
+        toastView.transform = CGAffineTransform(translationX: 0, y: 150)
+        UIView.animate(withDuration: 1) {
+            toastView.transform = .identity
         }
     }
+    
 }
