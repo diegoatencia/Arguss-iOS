@@ -75,7 +75,7 @@ extension DWAnimator {
     private func setup() {
         _displayLink = CADisplayLink(target: self, selector: #selector(update))
         _displayLink?.isPaused = true
-        _displayLink?.add(to: RunLoop.main, forMode: .commonModes)
+        _displayLink?.add(to: RunLoop.main, forMode: RunLoopMode.commonModes)
     }
     
     private func setupAnimatedText(from labelText: String?) {

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var loginMainView: UIView!
     
@@ -30,6 +30,9 @@ class LoginViewController: UIViewController {
         
         model = LoginViewModel(delegate: self)
         
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        
         configureTextFields()
         configureSignInButton()
     }
@@ -39,29 +42,49 @@ class LoginViewController: UIViewController {
         configureUI()
     }
     
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        if textField == self.emailTextField {
+            lineSeparator.backgroundColor = .whiteAndGhostWhite
+            mailLoginIcon.image = #imageLiteral(resourceName: "mailLoginSelectedIcon")
+            model.storeValue(text: emailTextField.text, inputType: .email)
+            enableSignInButton()
+        } else {
+            lineSeparator2.backgroundColor = .whiteAndGhostWhite
+            passwordLoginIcon.image = #imageLiteral(resourceName: "passwordLoginSelectedIcon")
+            model.storeValue(text: passwordTextField.text, inputType: .password)
+            enableSignInButton()
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField == self.emailTextField {
+            lineSeparator.backgroundColor = .oxfordBlueAndDavysGrey
+            mailLoginIcon.image = #imageLiteral(resourceName: "mailLoginIcon")
+        } else {
+            lineSeparator2.backgroundColor = .oxfordBlueAndDavysGrey
+            passwordLoginIcon.image = #imageLiteral(resourceName: "passwordLoginIcon")
+        }
+    }
+    
     private func configureSignInButton() {
         signInButton.isEnabled = false
     }
     
     private func configureTextFields() {
-        emailTextField.addTarget(self, action: #selector(editingEmailTextField), for: .editingChanged)
+        emailTextField.addTarget(self, action: #selector(editingTextFields), for: .editingChanged)
         
-        passwordTextField.addTarget(self, action: #selector(editingPasswordTextField), for: .editingChanged)
+        passwordTextField.addTarget(self, action: #selector(editingTextFields), for: .editingChanged)
         passwordTextField.isSecureTextEntry = true
     }
     
-    @objc private func editingEmailTextField() {
-        lineSeparator.backgroundColor = .whiteAndGhostWhite
-        mailLoginIcon.image = #imageLiteral(resourceName: "mailLoginSelectedIcon")
-        model.storeValue(text: emailTextField.text, inputType: .email)
-        enableSignInButton()
-    }
-    
-    @objc private func editingPasswordTextField() {
-        lineSeparator2.backgroundColor = .whiteAndGhostWhite
-        passwordLoginIcon.image = #imageLiteral(resourceName: "passwordLoginSelectedIcon")
-        model.storeValue(text: passwordTextField.text, inputType: .password)
-        enableSignInButton()
+    @objc private func editingTextFields() {
+        if emailTextField.isEditing {
+            model.storeValue(text: emailTextField.text, inputType: .email)
+            enableSignInButton()
+        } else if passwordTextField.isEditing {
+            model.storeValue(text: passwordTextField.text, inputType: .password)
+            enableSignInButton()
+        }
     }
     
     func enableSignInButton() {
