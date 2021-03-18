@@ -46,13 +46,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         if textField == self.emailTextField {
             lineSeparator.backgroundColor = .whiteAndGhostWhite
             mailLoginIcon.image = #imageLiteral(resourceName: "mailLoginSelectedIcon")
-            model.storeValue(text: emailTextField.text, inputType: .email)
-            enableSignInButton()
         } else {
             lineSeparator2.backgroundColor = .whiteAndGhostWhite
             passwordLoginIcon.image = #imageLiteral(resourceName: "passwordLoginSelectedIcon")
-            model.storeValue(text: passwordTextField.text, inputType: .password)
-            enableSignInButton()
         }
     }
     
@@ -91,7 +87,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let shouldBeEnabled: Bool = model.signInButtonShouldBeEnabled()
         if shouldBeEnabled {
             signInButton.isEnabled = true
-            //Editar colores si se habilita
+            if traitCollection.userInterfaceStyle != .dark {
+                signInButton.alpha = 1
+            }
+            signInButton.setTitleColor(.oxfordBlueAndCeladonBlue, for: .normal)
+            signInButton.layer.borderColor = UIColor.oxfordBlueAndCeladonBlue.cgColor
+            signInButton.backgroundColor = .whiteAndBlack
+            viewDidLayoutSubviews()
         }
     }
     
@@ -100,12 +102,20 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         loginMainView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         
         signInButton.layer.borderWidth = 2
-        signInButton.layer.borderColor = UIColor.oxfordBlueAndCeladonBlue40.cgColor
         signInButton.layer.cornerRadius = 15
-        if traitCollection.userInterfaceStyle != .dark {
-            signInButton.alpha = 0.4
-        } else {
+        signInButton.layer.shadowColor = UIColor.oxfordBlue70AndWhite20.cgColor
+        signInButton.layer.shadowOpacity = 1.0
+        signInButton.layer.shadowOffset = CGSize(width: 0, height: 2)
+        signInButton.layer.masksToBounds = false
+        if emailTextField.text != "" && passwordTextField.text != "" {
             signInButton.alpha = 1
+        } else {
+            signInButton.layer.borderColor = UIColor.oxfordBlueAndCeladonBlue40.cgColor
+            if traitCollection.userInterfaceStyle != .dark {
+                signInButton.alpha = 0.4
+            } else {
+                signInButton.alpha = 1
+            }
         }
         
         let emailPlaceholderAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white50AndDavysGrey]
@@ -127,6 +137,4 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
 }
 
-extension LoginViewController: LoginViewModelDelegate {
-    
-}
+extension LoginViewController: LoginViewModelDelegate {}

@@ -14,7 +14,6 @@
 		780299D425F6E17000C2A0DF /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 780299CE25F6E17000C2A0DF /* Montserrat-Medium.ttf */; };
 		780299D525F6E17000C2A0DF /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 780299CF25F6E17000C2A0DF /* Montserrat-Bold.ttf */; };
 		780299D625F6E17000C2A0DF /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 780299D025F6E17000C2A0DF /* Montserrat-Regular.ttf */; };
-		780299D825F875E100C2A0DF /* UIFont + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780299D725F875E100C2A0DF /* UIFont + Extensions.swift */; };
 		78175E9623F767EA00AC0933 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78175E9523F767EA00AC0933 /* GoogleService-Info.plist */; };
 		782E274025FB27950016BD2C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782E273F25FB27950016BD2C /* Constants.swift */; };
 		782E274225FB294D0016BD2C /* String + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782E274125FB294D0016BD2C /* String + Extensions.swift */; };
@@ -66,7 +65,6 @@
 		780299CE25F6E17000C2A0DF /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		780299CF25F6E17000C2A0DF /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		780299D025F6E17000C2A0DF /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
-		780299D725F875E100C2A0DF /* UIFont + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extensions.swift"; sourceTree = "<group>"; };
 		78175E9523F767EA00AC0933 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		782E273F25FB27950016BD2C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		782E274125FB294D0016BD2C /* String + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extensions.swift"; sourceTree = "<group>"; };
@@ -241,7 +239,6 @@
 			isa = PBXGroup;
 			children = (
 				78BD00D225F13DCA0008B8B6 /* UIViewController + Extensions.swift */,
-				780299D725F875E100C2A0DF /* UIFont + Extensions.swift */,
 				782E274125FB294D0016BD2C /* String + Extensions.swift */,
 			);
 			path = Extensions;
@@ -474,7 +471,6 @@
 				783DCCD624A263A3000F5315 /* RecuperarPasswordViewController.swift in Sources */,
 				78C4923C249DB67D0077FB70 /* HomeAdminViewController.swift in Sources */,
 				786E1B4624942C0000E1576D /* IniciarSesionViewController.swift in Sources */,
-				780299D825F875E100C2A0DF /* UIFont + Extensions.swift in Sources */,
 				782E274525FB2A280016BD2C /* Enums.swift in Sources */,
 				78BD00D325F13DCA0008B8B6 /* UIViewController + Extensions.swift in Sources */,
 				786E1B4C2494325200E1576D /* ActivityIndicator.swift in Sources */,

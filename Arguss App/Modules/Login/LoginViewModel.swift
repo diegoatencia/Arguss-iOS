@@ -8,9 +8,7 @@
 
 import Foundation
 
-protocol LoginViewModelDelegate {
-    
-}
+protocol LoginViewModelDelegate {}
 
 class LoginViewModel {
     
@@ -26,24 +24,15 @@ class LoginViewModel {
         switch inputType {
         case .email:
             emailText = text ?? ""
-        case .password:
-            passwordText = text  ?? ""
         default:
-            break
+            passwordText = text  ?? ""
         }
     }
     
     func signInButtonShouldBeEnabled() -> Bool {
-        return isValid(text: emailText, inputType: .email) && isValid(text: passwordText, inputType: .password)
-    }
-    
-    func isValid(text: String?, inputType: LoginInputType) -> Bool {
-        switch inputType {
-        case .email:
-            return text?.isValidEmail ?? false
-        case .password:
-            return text?.isValidPassword ?? false
-        default:
+        if emailText != "" && passwordText != "" {
+            return true
+        } else {
             return false
         }
     }

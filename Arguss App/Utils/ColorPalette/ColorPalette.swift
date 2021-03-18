@@ -89,6 +89,10 @@ extension UIColor {
         return UIColor(named: "eerieBlack")!
     }
     
+    @nonobjc class var white20: UIColor {
+        return UIColor(named: "white20")!
+    }
+    
     //MARK: Complex colors
     @nonobjc class var blackAndWhite: UIColor {
         return UIColor(named: "blackAndWhite")!
@@ -128,5 +132,13 @@ extension UIColor {
     
     @nonobjc class var whiteAndGhostWhite: UIColor {
         return UIColor(named: "whiteAndGhostWhite")!
+    }
+    
+    @nonobjc class var oxfordBlueAndCeladonBlue: UIColor {
+        return UIColor(named: "oxfordBlueAndCeladonBlue")!
+    }
+    
+    @nonobjc class var oxfordBlue70AndWhite20: UIColor {
+        return UIColor(named: "oxfordBlue70AndWhite20")!
     }
 }
