@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Firebase
 
 protocol LoginViewModelDelegate {}
 
@@ -38,7 +39,13 @@ class LoginViewModel {
     }
     
     func signInButtonPressed() {
-        
+        Auth.auth().signIn(withEmail: emailText, password: passwordText) { (result, error) in
+            if let error = error {
+                
+            } else {
+                
+            }
+        }
     }
     
     func forgotPasswordButtonPressed() {

@@ -27,6 +27,10 @@
 		786E1B4624942C0000E1576D /* IniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E1B4524942C0000E1576D /* IniciarSesionViewController.swift */; };
 		786E1B49249430B900E1576D /* IniciarSesionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E1B48249430B900E1576D /* IniciarSesionView.swift */; };
 		786E1B4C2494325200E1576D /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786E1B4B2494325200E1576D /* ActivityIndicator.swift */; };
+		788F8C8E2604315F00C31D52 /* Localizables.strings in Resources */ = {isa = PBXBuildFile; fileRef = 788F8C8D2604315F00C31D52 /* Localizables.strings */; };
+		788F8C92260438F100C31D52 /* LocalizablesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788F8C91260438F100C31D52 /* LocalizablesManager.swift */; };
+		788F8C9526043A2200C31D52 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788F8C9426043A2200C31D52 /* Localizable.swift */; };
+		788F8C9726043BC700C31D52 /* Localizables+Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788F8C9626043BC700C31D52 /* Localizables+Struct.swift */; };
 		78A6DCCD25EDE1EE00A32DBC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78A6DCCC25EDE1EE00A32DBC /* Colors.xcassets */; };
 		78BD00D325F13DCA0008B8B6 /* UIViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD00D225F13DCA0008B8B6 /* UIViewController + Extensions.swift */; };
 		78C49236249D5FB50077FB70 /* Persona.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C49235249D5FB50077FB70 /* Persona.swift */; };
@@ -78,6 +82,10 @@
 		786E1B4524942C0000E1576D /* IniciarSesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IniciarSesionViewController.swift; sourceTree = "<group>"; };
 		786E1B48249430B900E1576D /* IniciarSesionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IniciarSesionView.swift; sourceTree = "<group>"; };
 		786E1B4B2494325200E1576D /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		788F8C8D2604315F00C31D52 /* Localizables.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizables.strings; sourceTree = "<group>"; };
+		788F8C91260438F100C31D52 /* LocalizablesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizablesManager.swift; sourceTree = "<group>"; };
+		788F8C9426043A2200C31D52 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		788F8C9626043BC700C31D52 /* Localizables+Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Localizables+Struct.swift"; sourceTree = "<group>"; };
 		78A6DCCC25EDE1EE00A32DBC /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		78BD00D225F13DCA0008B8B6 /* UIViewController + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extensions.swift"; sourceTree = "<group>"; };
 		78C49235249D5FB50077FB70 /* Persona.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persona.swift; sourceTree = "<group>"; };
@@ -218,6 +226,17 @@
 			path = Recursos;
 			sourceTree = "<group>";
 		};
+		788F8C8C2604312A00C31D52 /* Localizables */ = {
+			isa = PBXGroup;
+			children = (
+				788F8C8D2604315F00C31D52 /* Localizables.strings */,
+				788F8C91260438F100C31D52 /* LocalizablesManager.swift */,
+				788F8C9426043A2200C31D52 /* Localizable.swift */,
+				788F8C9626043BC700C31D52 /* Localizables+Struct.swift */,
+			);
+			path = Localizables;
+			sourceTree = "<group>";
+		};
 		78C49234249D5BE20077FB70 /* Modelos */ = {
 			isa = PBXGroup;
 			children = (
@@ -310,6 +329,7 @@
 		78EB632C25DEDC57007B7C61 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				788F8C8C2604312A00C31D52 /* Localizables */,
 				78605A5525F6AA4E00AA149A /* Resources */,
 				78605A5225F6A81E00AA149A /* NibDesignable */,
 				78605A2525F6842B00AA149A /* Views */,
@@ -405,6 +425,7 @@
 				78D861DE23EDB96100E7F860 /* LaunchScreen.storyboard in Resources */,
 				780299D225F6E17000C2A0DF /* Montserrat-Light.ttf in Resources */,
 				78D861DB23EDB96100E7F860 /* Assets.xcassets in Resources */,
+				788F8C8E2604315F00C31D52 /* Localizables.strings in Resources */,
 				780299D425F6E17000C2A0DF /* Montserrat-Medium.ttf in Resources */,
 				780299D325F6E17000C2A0DF /* Montserrat-SemiBold.ttf in Resources */,
 				780299D125F6E17000C2A0DF /* Montserrat-ExtraBold.ttf in Resources */,
@@ -464,12 +485,14 @@
 			files = (
 				78605A2825F6A2D200AA149A /* ToastView.swift in Sources */,
 				78605A5425F6A82F00AA149A /* NibDesignable.swift in Sources */,
+				788F8C9526043A2200C31D52 /* Localizable.swift in Sources */,
 				78EB632825DECCE0007B7C61 /* LoginViewController.swift in Sources */,
 				78605A5825F6AB1F00AA149A /* ViewControllerFactory.swift in Sources */,
 				78C49236249D5FB50077FB70 /* Persona.swift in Sources */,
 				783DCCD824A2A8D2000F5315 /* RecuperarPasswordView.swift in Sources */,
 				783DCCD624A263A3000F5315 /* RecuperarPasswordViewController.swift in Sources */,
 				78C4923C249DB67D0077FB70 /* HomeAdminViewController.swift in Sources */,
+				788F8C92260438F100C31D52 /* LocalizablesManager.swift in Sources */,
 				786E1B4624942C0000E1576D /* IniciarSesionViewController.swift in Sources */,
 				782E274525FB2A280016BD2C /* Enums.swift in Sources */,
 				78BD00D325F13DCA0008B8B6 /* UIViewController + Extensions.swift in Sources */,
@@ -477,6 +500,7 @@
 				78EB632F25DEDC76007B7C61 /* ColorPalette.swift in Sources */,
 				782E274225FB294D0016BD2C /* String + Extensions.swift in Sources */,
 				78C49238249D74980077FB70 /* Alertas.swift in Sources */,
+				788F8C9726043BC700C31D52 /* Localizables+Struct.swift in Sources */,
 				78EB632B25DECCF7007B7C61 /* LoginViewModel.swift in Sources */,
 				782E274025FB27950016BD2C /* Constants.swift in Sources */,
 				786E1B49249430B900E1576D /* IniciarSesionView.swift in Sources */,
