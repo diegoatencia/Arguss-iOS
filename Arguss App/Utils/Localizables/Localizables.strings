@@ -1,0 +1,13 @@
+/* 
+  Localizables.strings
+  Arguss App
+
+  Created by Diego Atencia on 18/03/2021.
+  Copyright © 2021 Diego Atencia. All rights reserved.
+*/
+
+"General_empty" = "";
+
+"Login_emailPlaceholder" = "Email";
+"Login_passwordPlaceholder" = "Contraseña";
+"Login_forgotPassword" = "Olvidé mi contraseña";
