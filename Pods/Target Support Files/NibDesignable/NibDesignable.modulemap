@@ -1,0 +1,6 @@
+module NibDesignable {
+  umbrella header "NibDesignable-umbrella.h"
+
+  export *
+  module * { export * }
+}
