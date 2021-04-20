@@ -12,6 +12,7 @@ pod 'Firebase/Firestore'
 pod 'NibDesignable'
 pod 'ReachabilitySwift'
 pod 'DWAnimatedLabel'
+pod 'SwiftDate'
 end
 
 post_install do |installer|
