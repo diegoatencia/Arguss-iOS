@@ -13,4 +13,7 @@ struct L {
     
     ///Enum to access to Login localization strings.
     static var login: LoginLocalization.Type { return LoginLocalization.self }
+    
+    ///Enum to access to General localization strings.
+    static var gen: GeneralLocalization.Type { return GeneralLocalization.self }
 }

@@ -6,6 +6,8 @@
   Copyright © 2021 Diego Atencia. All rights reserved.
 */
 
+"General_empty" = "";
+
 "Login_emailPlaceholder" = "Email";
 "Login_passwordPlaceholder" = "Contraseña";
 "Login_forgotPassword" = "Olvidé mi contraseña";
