@@ -20,6 +20,12 @@
 		782E274525FB2A280016BD2C /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782E274425FB2A280016BD2C /* Enums.swift */; };
 		783DCCD624A263A3000F5315 /* RecuperarPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DCCD524A263A3000F5315 /* RecuperarPasswordViewController.swift */; };
 		783DCCD824A2A8D2000F5315 /* RecuperarPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DCCD724A2A8D2000F5315 /* RecuperarPasswordView.swift */; };
+		785F3C9D262F8057008DDBA4 /* RecoverPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785F3C9B262F8057008DDBA4 /* RecoverPasswordViewController.swift */; };
+		785F3C9E262F8057008DDBA4 /* RecoverPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 785F3C9C262F8057008DDBA4 /* RecoverPasswordViewController.xib */; };
+		785F3CB6262F8082008DDBA4 /* RecoverPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785F3CB5262F8082008DDBA4 /* RecoverPasswordViewModel.swift */; };
+		785F3CB8262F83EB008DDBA4 /* UIFont + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785F3CB7262F83EB008DDBA4 /* UIFont + Extensions.swift */; };
+		785F3CBA262F8A44008DDBA4 /* AttributeStringBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785F3CB9262F8A44008DDBA4 /* AttributeStringBuilder.swift */; };
+		785F3CBC262FD720008DDBA4 /* ToastViewStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785F3CBB262FD720008DDBA4 /* ToastViewStyles.swift */; };
 		78605A2825F6A2D200AA149A /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78605A2725F6A2D200AA149A /* ToastView.swift */; };
 		78605A2A25F6A33900AA149A /* ToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78605A2925F6A33900AA149A /* ToastView.xib */; };
 		78605A5425F6A82F00AA149A /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78605A5325F6A82F00AA149A /* NibDesignable.swift */; };
@@ -75,6 +81,12 @@
 		782E274425FB2A280016BD2C /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		783DCCD524A263A3000F5315 /* RecuperarPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecuperarPasswordViewController.swift; sourceTree = "<group>"; };
 		783DCCD724A2A8D2000F5315 /* RecuperarPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecuperarPasswordView.swift; sourceTree = "<group>"; };
+		785F3C9B262F8057008DDBA4 /* RecoverPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordViewController.swift; sourceTree = "<group>"; };
+		785F3C9C262F8057008DDBA4 /* RecoverPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecoverPasswordViewController.xib; sourceTree = "<group>"; };
+		785F3CB5262F8082008DDBA4 /* RecoverPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordViewModel.swift; sourceTree = "<group>"; };
+		785F3CB7262F83EB008DDBA4 /* UIFont + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extensions.swift"; sourceTree = "<group>"; };
+		785F3CB9262F8A44008DDBA4 /* AttributeStringBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeStringBuilder.swift; sourceTree = "<group>"; };
+		785F3CBB262FD720008DDBA4 /* ToastViewStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastViewStyles.swift; sourceTree = "<group>"; };
 		78605A2725F6A2D200AA149A /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 		78605A2925F6A33900AA149A /* ToastView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToastView.xib; sourceTree = "<group>"; };
 		78605A5325F6A82F00AA149A /* NibDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
@@ -141,6 +153,16 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
+		785F3C9A262F802C008DDBA4 /* RecoverPassword */ = {
+			isa = PBXGroup;
+			children = (
+				785F3C9B262F8057008DDBA4 /* RecoverPasswordViewController.swift */,
+				785F3C9C262F8057008DDBA4 /* RecoverPasswordViewController.xib */,
+				785F3CB5262F8082008DDBA4 /* RecoverPasswordViewModel.swift */,
+			);
+			path = RecoverPassword;
+			sourceTree = "<group>";
+		};
 		78605A2525F6842B00AA149A /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +176,7 @@
 			children = (
 				78605A2725F6A2D200AA149A /* ToastView.swift */,
 				78605A2925F6A33900AA149A /* ToastView.xib */,
+				785F3CBB262FD720008DDBA4 /* ToastViewStyles.swift */,
 			);
 			path = ToastView;
 			sourceTree = "<group>";
@@ -259,15 +282,9 @@
 			children = (
 				78BD00D225F13DCA0008B8B6 /* UIViewController + Extensions.swift */,
 				782E274125FB294D0016BD2C /* String + Extensions.swift */,
+				785F3CB7262F83EB008DDBA4 /* UIFont + Extensions.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		78C6099025E36BB200952392 /* RecoverPassword */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = RecoverPassword;
 			sourceTree = "<group>";
 		};
 		78D861C523EDB95B00E7F860 = {
@@ -310,7 +327,7 @@
 		78EB632425DECC2F007B7C61 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				78C6099025E36BB200952392 /* RecoverPassword */,
+				785F3C9A262F802C008DDBA4 /* RecoverPassword */,
 				78EB632525DECC98007B7C61 /* Login */,
 			);
 			path = Modules;
@@ -336,6 +353,7 @@
 				78664E3825F6718500346C5A /* ViewControllerFactory */,
 				78C6098F25E36B7800952392 /* Extensions */,
 				78EB632D25DEDC5E007B7C61 /* ColorPalette */,
+				785F3CB9262F8A44008DDBA4 /* AttributeStringBuilder.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -430,6 +448,7 @@
 				780299D325F6E17000C2A0DF /* Montserrat-SemiBold.ttf in Resources */,
 				780299D125F6E17000C2A0DF /* Montserrat-ExtraBold.ttf in Resources */,
 				780299D525F6E17000C2A0DF /* Montserrat-Bold.ttf in Resources */,
+				785F3C9E262F8057008DDBA4 /* RecoverPasswordViewController.xib in Resources */,
 				78175E9623F767EA00AC0933 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +503,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78605A2825F6A2D200AA149A /* ToastView.swift in Sources */,
+				785F3CBA262F8A44008DDBA4 /* AttributeStringBuilder.swift in Sources */,
 				78605A5425F6A82F00AA149A /* NibDesignable.swift in Sources */,
 				788F8C9526043A2200C31D52 /* Localizable.swift in Sources */,
 				78EB632825DECCE0007B7C61 /* LoginViewController.swift in Sources */,
@@ -492,21 +512,25 @@
 				783DCCD824A2A8D2000F5315 /* RecuperarPasswordView.swift in Sources */,
 				783DCCD624A263A3000F5315 /* RecuperarPasswordViewController.swift in Sources */,
 				78C4923C249DB67D0077FB70 /* HomeAdminViewController.swift in Sources */,
+				785F3CB8262F83EB008DDBA4 /* UIFont + Extensions.swift in Sources */,
 				788F8C92260438F100C31D52 /* LocalizablesManager.swift in Sources */,
 				786E1B4624942C0000E1576D /* IniciarSesionViewController.swift in Sources */,
 				782E274525FB2A280016BD2C /* Enums.swift in Sources */,
 				78BD00D325F13DCA0008B8B6 /* UIViewController + Extensions.swift in Sources */,
+				785F3C9D262F8057008DDBA4 /* RecoverPasswordViewController.swift in Sources */,
 				786E1B4C2494325200E1576D /* ActivityIndicator.swift in Sources */,
 				78EB632F25DEDC76007B7C61 /* ColorPalette.swift in Sources */,
 				782E274225FB294D0016BD2C /* String + Extensions.swift in Sources */,
 				78C49238249D74980077FB70 /* Alertas.swift in Sources */,
 				788F8C9726043BC700C31D52 /* Localizables+Struct.swift in Sources */,
 				78EB632B25DECCF7007B7C61 /* LoginViewModel.swift in Sources */,
+				785F3CB6262F8082008DDBA4 /* RecoverPasswordViewModel.swift in Sources */,
 				782E274025FB27950016BD2C /* Constants.swift in Sources */,
 				786E1B49249430B900E1576D /* IniciarSesionView.swift in Sources */,
 				78D861D223EDB95B00E7F860 /* AppDelegate.swift in Sources */,
 				78C4923A249DB65C0077FB70 /* HomeUsuarioViewController.swift in Sources */,
 				78D861D423EDB95B00E7F860 /* SceneDelegate.swift in Sources */,
+				785F3CBC262FD720008DDBA4 /* ToastViewStyles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
