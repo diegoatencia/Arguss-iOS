@@ -9,9 +9,15 @@
 import UIKit
 
 class RecoverPasswordViewController: UIViewController {
+    
+    var model: RecoverPasswordViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
+}
+
+extension RecoverPasswordViewController: RecoverPasswordViewModelDelegate {
+    
 }

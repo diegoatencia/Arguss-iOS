@@ -8,6 +8,16 @@
 
 import Foundation
 
-class RecoverPasswordViewModel {
+protocol RecoverPasswordViewModelDelegate: class {
     
+}
+
+class RecoverPasswordViewModel {
+    weak var delegate: RecoverPasswordViewModelDelegate?
+    var navigator: LoginNavigator?
+    
+    init(delegate: RecoverPasswordViewModelDelegate?, navigator: LoginNavigator?) {
+        self.delegate = delegate
+        self.navigator = navigator
+    }
 }

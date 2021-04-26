@@ -8,17 +8,20 @@
 
 import Foundation
 import Firebase
+import UIKit
 
-protocol LoginViewModelDelegate {}
+protocol LoginViewModelDelegate: class {}
 
 class LoginViewModel {
     
-    var delegate: LoginViewModelDelegate?
+    weak var delegate: LoginViewModelDelegate?
     private var emailText: String = ""
     private var passwordText: String = ""
+    var navigator: LoginNavigator?
     
-    init(delegate: LoginViewModelDelegate?) {
+    init(delegate: LoginViewModelDelegate?, navigator: LoginNavigator?) {
         self.delegate = delegate
+        self.navigator = navigator
     }
     
     func storeValue(text: String?, inputType: LoginInputType) {
@@ -40,16 +43,16 @@ class LoginViewModel {
     
     func signInButtonPressed() {
         Auth.auth().signIn(withEmail: emailText, password: passwordText) { (result, error) in
-            if let error = error {
-                
-            } else {
-                
-            }
+//            if let error = error {
+//
+//            } else {
+//
+//            }
         }
     }
     
     func forgotPasswordButtonPressed() {
-        
+        navigator?.navigate(to: .forgotPassword)
     }
     
 }

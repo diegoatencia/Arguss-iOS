@@ -141,4 +141,8 @@ extension UIColor {
     @nonobjc class var oxfordBlue70AndWhite20: UIColor {
         return UIColor(named: "oxfordBlue70AndWhite20")!
     }
+
+    @nonobjc class var davysGreyAndEerieBlackTwo: UIColor {
+        return UIColor(named: "davysGreyAndEerieBlackTwo")!
+    }
 }

@@ -57,4 +57,7 @@ extension UIViewController {
         })
     }
     
+    class var className: String {
+        return String(describing: Self.self)
+    }
 }

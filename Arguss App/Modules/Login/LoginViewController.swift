@@ -24,17 +24,21 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var forgotPasswordLabel: UILabel!
     
     var model: LoginViewModel!
+    var navigator: LoginNavigator? {
+        return (navigationController as? LoginNavigationController)?.navigator
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        model = LoginViewModel(delegate: self)
+        model = LoginViewModel(delegate: self, navigator: navigator)
         
         emailTextField.delegate = self
         passwordTextField.delegate = self
         
         configureTextFields()
         configureSignInButton()
+        configureForgotPasswordLabelAction()
     }
     
     override func viewDidLayoutSubviews() {
@@ -64,6 +68,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     private func configureSignInButton() {
         signInButton.isEnabled = false
+    }
+    
+    private func configureForgotPasswordLabelAction() {
+        forgotPasswordLabel.isUserInteractionEnabled = true
+        let tap = UITapGestureRecognizer(target: self, action: #selector(forgotPasswordTapped))
+        forgotPasswordLabel.addGestureRecognizer(tap)
     }
     
     private func configureTextFields() {
@@ -134,6 +144,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func signInButtonPressed(_ sender: UIButton) {
         
+    }
+    
+    @objc private func forgotPasswordTapped() {
+        model.forgotPasswordButtonPressed()
     }
 }
 
