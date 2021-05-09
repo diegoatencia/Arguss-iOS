@@ -13,6 +13,7 @@ pod 'NibDesignable'
 pod 'ReachabilitySwift'
 pod 'DWAnimatedLabel'
 pod 'IQKeyboardManagerSwift'
+pod 'RxSwift'
 end
 
 post_install do |installer|

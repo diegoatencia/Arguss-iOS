@@ -10,7 +10,7 @@ import Foundation
 import Firebase
 import UIKit
 
-protocol LoginViewModelDelegate: class {}
+protocol LoginViewModelDelegate: AnyObject {}
 
 class LoginViewModel {
     

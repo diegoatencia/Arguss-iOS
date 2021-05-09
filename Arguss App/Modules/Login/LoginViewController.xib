@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -46,20 +46,20 @@
                             <rect key="frame" x="0.0" y="210" width="375" height="457"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido/a" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHH-bK-Z4H">
-                                    <rect key="frame" x="40" y="40" width="152.5" height="30.5"/>
+                                    <rect key="frame" x="40" y="40" width="179" height="32"/>
                                     <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="26"/>
                                     <color key="textColor" name="whiteAndCeladonBlue"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mailLoginIcon" translatesAutoresizingMaskIntoConstraints="NO" id="OgY-DO-xXX">
-                                    <rect key="frame" x="40" y="110.5" width="25.5" height="20"/>
+                                    <rect key="frame" x="40" y="112" width="25.5" height="20"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="20" id="kdA-fP-Kys"/>
                                         <constraint firstAttribute="width" secondItem="OgY-DO-xXX" secondAttribute="height" multiplier="9:7" id="u7B-C5-aMf"/>
                                     </constraints>
                                 </imageView>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="Email" adjustsFontForContentSizeCategory="YES" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="wXu-mB-WPi">
-                                    <rect key="frame" x="75.5" y="110.5" width="259.5" height="20"/>
+                                    <rect key="frame" x="75.5" y="112" width="259.5" height="20"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="20" id="7I6-LN-ZQX"/>
@@ -69,21 +69,21 @@
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xe5-Od-B4W" userLabel="lineSeparator">
-                                    <rect key="frame" x="40" y="140.5" width="295" height="1"/>
+                                    <rect key="frame" x="40" y="142" width="295" height="1"/>
                                     <color key="backgroundColor" name="oxfordBlueAndDavysGrey"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="1" id="f9X-XE-fSM"/>
                                     </constraints>
                                 </view>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="passwordLoginIcon" translatesAutoresizingMaskIntoConstraints="NO" id="v4y-h2-fE2">
-                                    <rect key="frame" x="40" y="181.5" width="19" height="26"/>
+                                    <rect key="frame" x="40" y="183" width="19" height="26"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="19" id="896-kA-3pn"/>
                                         <constraint firstAttribute="height" constant="26" id="bNA-Pf-pvx"/>
                                     </constraints>
                                 </imageView>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contraseña" adjustsFontForContentSizeCategory="YES" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="LSn-uo-Px2">
-                                    <rect key="frame" x="69" y="184.5" width="83" height="20"/>
+                                    <rect key="frame" x="69" y="186" width="96.5" height="20"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="20" id="AaO-Vp-SaR"/>
                                     </constraints>
@@ -92,14 +92,14 @@
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="imb-lC-fCs" userLabel="lineSeparator2">
-                                    <rect key="frame" x="40" y="214.5" width="295" height="1"/>
+                                    <rect key="frame" x="40" y="216" width="295" height="1"/>
                                     <color key="backgroundColor" name="oxfordBlueAndDavysGrey"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="1" id="RMV-hi-fH4"/>
                                     </constraints>
                                 </view>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzo-va-1FB">
-                                    <rect key="frame" x="40" y="255.5" width="295" height="46"/>
+                                    <rect key="frame" x="40" y="257" width="295" height="46"/>
                                     <color key="backgroundColor" name="whiteAndWhite10"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="46" id="SiE-MV-093"/>
@@ -113,7 +113,7 @@
                                     </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YbX-7O-fOj" userLabel="forgotPasswordLabel">
-                                    <rect key="frame" x="168" y="321.5" width="39.5" height="19"/>
+                                    <rect key="frame" x="165" y="323" width="45" height="20"/>
                                     <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
                                     <color key="textColor" name="whiteAndSpanishGrey"/>
                                     <nil key="highlightedColor"/>
